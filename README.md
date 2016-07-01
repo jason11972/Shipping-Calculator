@@ -111,6 +111,10 @@
           - less than 20 ounces: 2 cents an ounce
           - greater than 2 pounds: 20 cents an ounce
           - between 20 ounces and 2 pounds: 10 cents an ounce
+          - faster shipping acts as a multiplier
+            - 5 day: 1x multiplier
+            - 3 day: 1.5x multiplier
+            - 2 day: 2x multiplier
         - calculate the arrival date based on the following:
           - the current date (use the Date object http://www.w3schools.com/jsref/jsref_obj_date.asp)
           - the shipping_time (in days), added on
