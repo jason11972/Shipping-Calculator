@@ -63,7 +63,7 @@
     - give it an ID
     - purpose - display the shipping information of the package (the weight in ounces, the price of shipping, and the expected arrival date
   
-  
+<img src="https://github.com/Learning-Fuze/shipping_calculator/blob/master/design.png">
 
 ### Functional Scope
 >- create the following global variable:
