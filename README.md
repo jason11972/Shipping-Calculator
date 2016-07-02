@@ -106,7 +106,7 @@
         - weight {number} the weight (in ounces) of the package
         - cost {number} the cost (in dollars) of shipping the package
       - details:
-        - should convert the weight (from pounds to ounces)
+        - should convert the weight (from pounds to ounces) 16 ounces to the pound.
         - calculate the shipping cost based on the following formula:
           - less than 20 ounces: 2 cents an ounce
           - greater than 2 pounds: 20 cents an ounce
@@ -120,6 +120,7 @@
           - the shipping_time (in days), added on
           - if the current day is Sunday, add one day to the shipping (packages cannot be sent on Sunday)
           - if it would arrive on Sunday, add one day to the shipping (packages cannot arrive on Sunday)
+          - Packages still move on Sunday (trains and planes don't stop moving on Sunday, so don't add 1 day for merely travelling on Sunday)
           - convert the date into a format similar to the following: June 3rd, 2016
           
     - display_shipping
