@@ -122,6 +122,7 @@
           - if it would arrive on Sunday, add one day to the shipping (packages cannot arrive on Sunday)
           - Packages still move on Sunday (trains and planes don't stop moving on Sunday, so don't add 1 day for merely travelling on Sunday)
           - convert the date into a format similar to the following: June 3rd, 2016
+  - create a jQuery document ready (load handler) function and call apply_event_handlers
           
     - display_shipping
       - name: display_shipping
