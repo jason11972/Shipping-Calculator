@@ -59,7 +59,7 @@
   - button
     - label: calculate
     - give it an id
-  create a div
+  - create a div
     - give it an ID
     - purpose - display the shipping information of the package (the weight in ounces, the price of shipping, and the expected arrival date
   
