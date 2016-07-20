@@ -1,0 +1,12 @@
+
+
+#shippinginfo {
+    height: 325px;
+    width: 500px;
+    border: solid black;
+    margin: 5px 0 0 15px;
+}
+
+#shippingcats {
+    margin: 5px 0 5px 10px;
+}

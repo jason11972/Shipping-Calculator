@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shipping Calculator</title>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <script src ="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="javascript.js"></script>
+</head>
+<body>
+
+<form>
+    <input onkeypress="return validate_keydown(event)" type="text" name="input" value="weight of package in pounds"><br>
+</form>
+
+<form>
+    <input type="radio" name="days" value="5 day" checked> 5 day<br>
+    <input type="radio" name="days" value="3 day"> 3 day<br>
+    <input type="radio" name="days" value="2 day"> 2 day
+</form>
+
+<div>
+    <button id="calculate">Calculate</button>
+</div>
+
+<div id="shippinginfo">
+    <ul>
+        <li id="shippingcats"><b>Weight:</b></li>
+        <ul id="weightdetails">
+            <li></li>
+            <li></li>
+        </ul>
+        <li id="shippingcats"><b>Shipping:</b></li>
+        <ul id="shippingdetails">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <li id="shippingcats"><b>Cost:</b></li>
+    </ul>
+
+</div>
+
+</body>
+</html>
