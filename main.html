@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
     <meta charset="UTF-8">
     <title>Shipping Calculator</title>
     <link type="text/css" rel="stylesheet" href="stylesheet.css">
@@ -11,7 +11,7 @@
 <body>
 
 <form>
-    <input id = "weightinput"  type="number" name="input" value="weight of package in pounds"><br>
+    <input id = "weightinput"  type="text" name="input" placeholder="weight of package in pounds"><br>
 </form>
 
 <form>
@@ -21,12 +21,12 @@
 </form>
 
 <div>
-    <button id="calculate" onclick="calculate_shipping(); multiplier(); totalshippingcost()">Calculate</button>
+    <button id="calculate" onclick="calculate_shipping(); shippingDays(); totalShippingCost()">Calculate</button>
 </div>
 
 <div id="shippinginfo">
     <ul>
-        <li id="weightcats"><b>Weight:</b></li>
+        <li id="shippingcats"><b>Weight:</b></li>
         <ul id="weightdetails">
             <li id = "pounds"></li>
             <li id = "ounces"></li>
