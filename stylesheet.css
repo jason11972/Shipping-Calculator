@@ -7,6 +7,6 @@
     margin: 5px 0 0 15px;
 }
 
-#shippingcats {
+#shippingcats, #shippingcost , #weightcats{
     margin: 5px 0 5px 10px;
 }

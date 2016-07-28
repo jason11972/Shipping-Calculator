@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <meta charset="UTF-8">
     <title>Shipping Calculator</title>
     <link type="text/css" rel="stylesheet" href="stylesheet.css">
@@ -10,33 +11,33 @@
 <body>
 
 <form>
-    <input onkeypress="return validate_keydown(event)" type="text" name="input" value="weight of package in pounds"><br>
+    <input id = "weightinput"  type="number" name="input" value="weight of package in pounds"><br>
 </form>
 
 <form>
-    <input type="radio" name="days" value="5 day" checked> 5 day<br>
-    <input type="radio" name="days" value="3 day"> 3 day<br>
-    <input type="radio" name="days" value="2 day"> 2 day
+    <input class = "daychoice" type="radio" value = "5" name="days" checked> 5 day<br>
+    <input class = "daychoice" type="radio" value = "3" name="days"> 3 day<br>
+    <input class = "daychoice" type="radio" value = "2" name="days"> 2 day
 </form>
 
 <div>
-    <button id="calculate">Calculate</button>
+    <button id="calculate" onclick="calculate_shipping(); multiplier(); totalshippingcost()">Calculate</button>
 </div>
 
 <div id="shippinginfo">
     <ul>
-        <li id="shippingcats"><b>Weight:</b></li>
+        <li id="weightcats"><b>Weight:</b></li>
         <ul id="weightdetails">
-            <li></li>
-            <li></li>
+            <li id = "pounds"></li>
+            <li id = "ounces"></li>
         </ul>
         <li id="shippingcats"><b>Shipping:</b></li>
         <ul id="shippingdetails">
-            <li></li>
-            <li></li>
-            <li></li>
+            <li id = "type"></li>
+            <li id = "departing"></li>
+            <li id = "arriving"></li>
         </ul>
-        <li id="shippingcats"><b>Cost:</b></li>
+        <li id="shippingcost"><b>Cost:</b></li>
     </ul>
 
 </div>
