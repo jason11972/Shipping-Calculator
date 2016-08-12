@@ -1,0 +1,15 @@
+
+
+#shippinginfo {
+    height: 325px;
+    width: 500px;
+    border: solid black;
+    margin: 5px 0 0 15px;
+}
+
+.shippingcats, #shippingcost , #weightcats{
+    margin: 5px 0 5px 10px;
+}
+body {
+    background-color: darkorange;
+}
