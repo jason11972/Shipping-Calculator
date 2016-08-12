@@ -1,0 +1,1 @@
+Basic shipping calculator with three different radio buttons that allow you to change delivery speed.  Calculator then provides you with cost of shipping your package based on its weight and the delivery time you choose.  Sunday delivery is not available, so it automatically skips to following Monday when necessary. 
